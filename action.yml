@@ -1,6 +1,6 @@
-name: 'Pull Request to My Backlog'
+name: 'Pull Request to Hoai Backlog'
 description: 'Add comment to Backlog issues when pull request opened or closed'
-author: Toshio Takiguchi
+author: hoaittt
 inputs:
     backlog-host:
         description: 'Host of backlog'
