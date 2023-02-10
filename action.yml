@@ -1,0 +1,16 @@
+name: 'Pull Request to My Backlog'
+description: 'Add comment to Backlog issues when pull request opened or closed'
+author: Toshio Takiguchi
+inputs:
+    backlog-host:
+        description: 'Host of backlog'
+        required: true
+    api-key:
+        description: 'API_KEY of backlog'
+        required: true
+runs:
+    using: 'node12'
+    main: 'dist/index.js'
+branding:
+    color: green
+    icon: git-pull-request
