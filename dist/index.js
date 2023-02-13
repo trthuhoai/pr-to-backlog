@@ -1840,7 +1840,12 @@ function run() {
     });
 }
 function parseIssueKey(title) {
-    return [title.split(" ")[0]] || [];
+    var id_ticket=(title.split(" ")[0]).split("-");
+    if( id_ticket[0]!=''&&id_ticket[0]==id_ticket[0].toUpperCase())
+    {
+	    return [title.split(" ")[0]]
+    }
+    return [];
 }
 run();
 //# sourceMappingURL=main.js.map
